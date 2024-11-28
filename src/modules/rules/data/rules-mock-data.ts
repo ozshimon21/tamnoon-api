@@ -3,6 +3,7 @@ import { Rule } from '../entities/rule.entity';
 export const mockRules: Rule[] = [
   {
     id: '1',
+    name: 'rule-1',
     groupName: 'instances',
     filter: {
       AND: [
@@ -33,6 +34,7 @@ export const mockRules: Rule[] = [
   },
   {
     id: '2',
+    name: 'rule-2',
     groupName: 'prod-or-staging-in-us-east-1',
     filter: {
       AND: [
@@ -66,6 +68,7 @@ export const mockRules: Rule[] = [
   },
   {
     id: '3',
+    name: 'rule-3',
     groupName: 'user-777',
     filter: {
       key: 'ownerId',

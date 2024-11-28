@@ -12,6 +12,14 @@ export class RuleDto {
   id: string;
 
   @ApiProperty({
+    description: 'The name of the rule',
+    example: 'rule_name_123456',
+  })
+  @IsString()
+  @IsNotEmpty()
+  name: string;
+
+  @ApiProperty({
     description: 'The name of the group this rule belongs to',
     example: 'production-assets',
   })
