@@ -223,7 +223,7 @@ Matches assets where name contains "prod"
 1. AND Operation -All conditions must be true and can contain nested OR conditions
 ```json
 {
-  "AND": [condition1, condition2]
+  "AND": ["condition1", "condition2"]
 }
 ```
 
@@ -231,7 +231,7 @@ Matches assets where name contains "prod"
 
 ```json
 {
-  "OR": [condition1, condition2]
+  "OR": ["condition1", "condition2"]
 }
 ```
 
@@ -263,7 +263,7 @@ The example rule would match because:
 - The project currently uses mock data for development and testing purposes
 - Mock data files are located in:
   - `src/modules/assets/data/assets-mock-data.ts` folder: Contains assets mock data.
-  - `src/modules/rules/data/rules-mock-data.ts` folder: Contains rule definition mocks data.
+  - `src/modules/rules/data/rules-mock-data.ts` folder: Contains rule definition mock data.
 - These mock data files serve as examples and can be used as templates for real data structures.
 
 ### Development TODOs
