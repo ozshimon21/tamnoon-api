@@ -265,6 +265,7 @@ The example rule would match because:
   - `src/modules/assets/data/assets-mock-data.ts` folder: Contains assets mock data.
   - `src/modules/rules/data/rules-mock-data.ts` folder: Contains rule definition mock data.
 - These mock data files serve as examples and can be used as templates for real data structures.
+- The current implementation in controllers and services uses `async/await` syntax, although it's not strictly necessary in the current implementation. This is intentional and serves as preparation for future integration with real database clients and async operations.
 
 ### Development TODOs
 1. Entity to DTO Mapping
@@ -274,6 +275,9 @@ The example rule would match because:
 
 2. Test Coverage
    - Increase unit test coverage across all services
+
+3. Rule Schema Validation
+   - Dedicate more time to improve and expand rule schema validation
 
 ## Contact
 
